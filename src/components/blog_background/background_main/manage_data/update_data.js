@@ -18,12 +18,12 @@ function UpdateData() {
   const history = useHistory();
   const [dataList, setDataList] = useState({
     dataId: '',
-    dataImage: '',
     dataTitle: '',
     dataCategory: 0,
     dataContext: '',
     createtime: ''
   });
+  const [dataImage, setDataImage] = useState('');
   const handleGetDetailData = async () => {
     const result = await axios.get('/getdetailarticle', {
       params: {
@@ -34,11 +34,11 @@ function UpdateData() {
     setDataList({
       ...dataList,
       dataId: _id,
-      dataImage: imgurl,
       dataTitle: title,
       dataCategory: category,
       dataContext: context
     });
+    setDataImage(imgurl);
   };
   const handleUpload = async (e) => {
     const file = e.target.files[0];
@@ -48,7 +48,7 @@ function UpdateData() {
       const result = await axios.post('/upload',
         formData
       );
-      setDataList({ ...dataList, dataImage: result.data.data.res.url });
+      setDataImage(result.data.data.res.url);
     }
   };
   const handleEditChange = it => {
@@ -71,7 +71,7 @@ function UpdateData() {
     }());
     const result = await axios.post(apiUrl, {
       id: dataList.dataId,
-      imageUrl: dataList.dataImage,
+      imageUrl: dataImage,
       title: dataList.dataTitle,
       category: dataList.dataCategory,
       context: dataList.dataContext,
