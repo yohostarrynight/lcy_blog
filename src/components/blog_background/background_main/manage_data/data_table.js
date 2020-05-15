@@ -35,7 +35,8 @@ function DataTable() {
     const result = await axios.get('/getarticleinfo', {
       params: {
         offset: pageInfo.page * pageInfo.rowsPerPage,
-        limit: pageInfo.rowsPerPage
+        limit: pageInfo.rowsPerPage,
+        categories: 999
       }
     });
     const { res, rescount } = result.data.data;
