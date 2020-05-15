@@ -51,7 +51,7 @@ function HeaderRightNav() {
     history.push('/login');
   };
   const handlePushIndex = () => {
-    history.push('/');
+    history.push('/index');
   };
   const handlePushGithub = () => {
     window.open('https://github.com');
