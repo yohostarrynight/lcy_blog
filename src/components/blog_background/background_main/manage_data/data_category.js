@@ -31,7 +31,7 @@ function DataCategory(props) {
         <MenuItem value={0}>前端</MenuItem>
         <MenuItem value={1}>后端</MenuItem>
         <MenuItem value={2}>生活</MenuItem>
-        <MenuItem value={4}>其他</MenuItem>
+        <MenuItem value={3}>其他</MenuItem>
       </Select>
     </Control>
   );
