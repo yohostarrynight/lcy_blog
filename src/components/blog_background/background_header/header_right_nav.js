@@ -54,7 +54,7 @@ function HeaderRightNav() {
     history.push('/index');
   };
   const handlePushGithub = () => {
-    window.open('https://github.com');
+    window.open('https://github.com/yohostarrynight/lcy_blog');
   };
   return (
     <IconList>
