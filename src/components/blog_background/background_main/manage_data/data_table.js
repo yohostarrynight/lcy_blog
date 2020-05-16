@@ -12,6 +12,7 @@ import Edit from '@material-ui/icons/Edit';
 import Delete from '@material-ui/icons/Delete';
 import axios from '../../../../axios_config/axios_config';
 import DataDeleteDialog from './data_delete_dialog';
+import { categoryFilter } from '../../../../utils/filter';
 
 const EditIcon = styled(Edit)`
   cursor: pointer;
@@ -59,18 +60,7 @@ function DataTable() {
   const handlePushUpdate = id => () => {
     history.push('/background/updatedata/' + id);
   };
-  const categoryFilter = num => {
-    switch (num) {
-      case 0:
-        return '前端';
-      case 1:
-        return '后端';
-      case 2:
-        return '生活';
-      default:
-        return '其他';
-    }
-  };
+
   useEffect(() => {
     getDataInfo();
   }, [pageInfo.page, pageInfo.rowsPerPage]);
