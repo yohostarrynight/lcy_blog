@@ -14,7 +14,7 @@ const Logo = styled.div`
 function LoginLogo() {
   const history = useHistory();
   const handlePushLogin = () => {
-    history.push('/');
+    history.push('/index');
   };
   return (
     <Logo onClick={handlePushLogin}>LCYBLOG</Logo>
