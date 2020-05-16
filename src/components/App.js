@@ -10,10 +10,10 @@ function App() {
     <CookiesProvider>
       <Router>
         <Switch>
-          <Route path="/" exact component={IndexPage} />
+          <Route path="/index" component={IndexPage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/background" component={BackgroundPage} />
-          <Redirect from="*" to="/" />
+          <Redirect from="*" to="/index" />
         </Switch>
       </Router>
     </CookiesProvider>
