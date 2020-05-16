@@ -11,7 +11,7 @@ const Article = styled.div`
   &:hover {
     background: #effbff;
     box-shadow: 0 15px 30px 0 rgba(0,0,0,.1);
-    color: rgb(18, 97, 182); 
+    color: #006bde; 
   }
 `;
 const Img = styled.img`

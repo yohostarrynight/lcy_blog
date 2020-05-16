@@ -12,6 +12,9 @@ const Block = styled.div`
   align-items: center;
   margin-right: 20px;
   cursor: pointer;
+  &:hover {
+    color: #006bde;
+  }
 `;
 const Icon = styled.div`
   .MuiSvgIcon-root {
