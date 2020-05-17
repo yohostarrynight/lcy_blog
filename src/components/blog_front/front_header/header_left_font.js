@@ -6,7 +6,7 @@ const Blog = styled.div`
   color: #555;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 20px;
+  margin-left: 90px;
   cursor: pointer;
 `;
 

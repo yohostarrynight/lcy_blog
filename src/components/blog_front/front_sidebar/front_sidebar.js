@@ -12,22 +12,22 @@ const Sidebar = styled.div`
   border-right: 1px solid #ebedf0;
 `;
 const AvatarSize = styled(Avatar)`
-  margin: 10px auto 0 auto;
+  margin: 40px auto 0 auto;
   &.MuiAvatar-root {
     width: 132px;
     height: 132px;
   }
 `;
 const Introduce = styled.div`
-  margin-top: 15px;
-  padding-bottom: 5px;
+  margin-top: 30px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #ebedf0;
   text-align: center;
 `;
 const FriendPath = styled.div`
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #ebedf0;
 `;
 const Github = styled(GithubIcon)`
@@ -60,6 +60,11 @@ function FrontSidebar() {
           <AvatarNest alt="" src={NeskattackedIcon} />
         </a>
       </FriendPath>
+      <Introduce>
+        <h3>一代人</h3>
+        <p>黑夜给了我黑色的眼睛</p>
+        <p>我却用它寻找光明</p>
+      </Introduce>
     </Sidebar>
   );
 }
