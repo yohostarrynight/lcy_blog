@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getCookie } from '../utils/cookies';
 
-axios.defaults.baseURL = 'http://192.168.137.128:3000';
+axios.defaults.baseURL = 'http://47.101.219.129:3000';
 axios.defaults.timeout = 100000;
 
 axios.interceptors.request.use(config => {
