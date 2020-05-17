@@ -9,6 +9,12 @@ import axios from '../../../axios_config/axios_config';
 const Article = styled.div`
   display: flex;
 `;
+const Title = styled.div`
+  text-align: center;
+  font-size: 32px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e8e8e8;
+ `;
 const ArticleMarkdown = styled.div`
   width: 80%;
   pre {
@@ -55,7 +61,7 @@ function ContainerArticle() {
   return (
     <Article>
       <ArticleMarkdown>
-        <p>{data.title}</p>
+        <Title>{data.title}</Title>
         <ReactMarkdown source={data.context} />
       </ArticleMarkdown>
       <ArticleNav>
