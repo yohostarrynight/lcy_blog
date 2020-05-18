@@ -4,7 +4,7 @@ import LoginLogo from './login_logo';
 import LoginForm from './login_form';
 
 const LoginBackground = styled.div`
-  min-height: 750px;
+  min-height: 1080px;
   background: #f1f1f1;
 `;
 

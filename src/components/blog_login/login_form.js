@@ -5,7 +5,7 @@ import LoginFormInput from './login_form_input';
 
 const Form = styled.div`
   width: 350px;
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
   padding: 50px 60px;
   background: #fff;
   border-radius: 4px;

@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 const Logo = styled.div`
   width: 150px;
-  padding: 56px 0 0 50px;
+  padding: 66px 0 0 50px;
   color: #ea6f5a;
   font-size: 30px;
   font-weight: bold;
